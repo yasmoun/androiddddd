@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Waiting for data text centered at the top -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waiting for data..."
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <!-- Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/blue"
+        android:tint="@android:color/white"
+        android:src="@drawable/baseline_add_24"/>
+
+    <!-- ImageView 1 -->
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="128dp"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="700dp"
+        android:src="@drawable/hh" />
+
+    <!-- ImageView 2 -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/bb" />
+
+    <!-- ImageView 3 -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="700dp"
+        android:src="@drawable/rr" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/baseline_logout_24" />
+
+    <!-- LinearLayout for buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="32dp">
+
+        <!-- Add Book Type button -->
+        <Button
+            android:id="@+id/addBookTypeButton"
+            android:layout_width="280dp"
+            android:layout_height="56dp"
+            android:text="Add Book Type"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/baseline_library_add_24"
+            android:drawablePadding="10dp"/>
+
+        <!-- List Books button -->
+        <Button
+            android:id="@+id/listBooksButton"
+            android:layout_width="280dp"
+            android:layout_height="56dp"
+            android:text="List Books"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/baseline_menu_book_24"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- List Book Types button -->
+        <Button
+            android:id="@+id/listBookTypesButton"
+            android:layout_width="280dp"
+            android:layout_height="56dp"
+            android:text="List Book Types"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/baseline_book_24"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- View All Books button -->
+        <Button
+            android:id="@+id/allBooksButton"
+            android:layout_width="280dp"
+            android:layout_height="56dp"
+            android:text="View All Books"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/baseline_remove_red_eye_24"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
